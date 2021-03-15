@@ -1,7 +1,7 @@
 # Bloom
 
 
-![Workflow result](https://https://github.com/EddieF87/bloom/workflows/Check/badge.svg)
+![Workflow result](https://github.com/EddieF87/bloom/workflows/Check/badge.svg)
 
 
 ## :scroll: Description
