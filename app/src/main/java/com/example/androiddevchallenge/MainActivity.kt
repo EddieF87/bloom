@@ -18,30 +18,51 @@ package com.example.androiddevchallenge
 import android.os.Bundle
 import androidx.activity.compose.setContent
 import androidx.appcompat.app.AppCompatActivity
-import androidx.compose.material.MaterialTheme
-import androidx.compose.material.Surface
-import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.tooling.preview.Preview
+import androidx.core.view.WindowCompat
+import androidx.navigation.compose.NavHost
+import androidx.navigation.compose.composable
+import androidx.navigation.compose.rememberNavController
+import com.example.androiddevchallenge.MainActivity.Companion.MAIN_NAV_HOME
+import com.example.androiddevchallenge.MainActivity.Companion.MAIN_NAV_LOGIN
+import com.example.androiddevchallenge.MainActivity.Companion.MAIN_NAV_WELCOME
+import com.example.androiddevchallenge.ui.screen.HomeScreen
+import com.example.androiddevchallenge.ui.screen.LoginScreen
+import com.example.androiddevchallenge.ui.screen.WelcomeScreen
 import com.example.androiddevchallenge.ui.theme.MyTheme
+import dev.chrisbanes.accompanist.insets.ProvideWindowInsets
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        WindowCompat.setDecorFitsSystemWindows(window, false)
         setContent {
             MyTheme {
-                MyApp()
+                ProvideWindowInsets {
+                    MyApp()
+                }
             }
         }
     }
+
+    companion object {
+        const val MAIN_NAV_WELCOME = "welcome"
+        const val MAIN_NAV_LOGIN = "login"
+        const val MAIN_NAV_HOME = "home"
+    }
 }
 
-// Start building your app here!
 @Composable
 fun MyApp() {
-    Surface(color = MaterialTheme.colors.background) {
-        Text(text = "Ready... Set... GO!")
+//    Scaffold {
+    val navController = rememberNavController()
+    NavHost(navController, startDestination = MAIN_NAV_WELCOME) {
+        composable(MAIN_NAV_WELCOME) { WelcomeScreen(navController) }
+        composable(MAIN_NAV_LOGIN) { LoginScreen(navController) }
+        composable(MAIN_NAV_HOME) { HomeScreen(navController) }
     }
+//    }
 }
 
 @Preview("Light Theme", widthDp = 360, heightDp = 640)

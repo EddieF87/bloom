@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="home_tab_home">Home</string>
+    <string name="home_tab_favorites">Favorites</string>
+    <string name="home_tab_profile">Profile</string>
+    <string name="home_tab_cart">Cart</string>
+
+    <string name="home_browse_themes_label">Browse themes</string>
+    <string name="home_search_label">Search</string>
+    <string name="home_design_your_home_garden_label">Design your home garden</string>
+</resources>

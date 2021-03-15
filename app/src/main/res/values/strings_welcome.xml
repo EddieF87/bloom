@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="welcome_primary">Create account</string>
+    <string name="welcome_secondary">Log in</string>
+    <string name="welcome_subtitle">Beautiful home garden solutions</string>
+</resources>

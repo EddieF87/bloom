@@ -1,3 +1,40 @@
+# Put title of your app here
+Bloom
+
+![Workflow result](https://https://github.com/EddieF87/bloom/workflows/Check/badge.svg)
+
+
+## :scroll: Description
+An app for plant photos or something like that.
+
+
+## :bulb: Motivation and Context
+I'm especially proud of completing this challenge.
+
+
+## :camera_flash: Screenshots
+<img src="/results/screenshot_1.png" width="260">&emsp;<img src="/results/screenshot_2.png" width="260">
+
+## License
+```
+Copyright 2020 The Android Open Source Project
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+    https://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+```
+
+
+
+
 # Template repository
 
 Template repository for the Jetpack Compose [#AndroidDevChallenge](https://developer.android.com/dev-challenge).
@@ -14,7 +51,7 @@ Clone your repository and open it in the latest [Android Studio (Canary build)](
   screenshot_1.png and screenshot_2.png.
 - Include a screen record of your submission in the [results](results) folder. The name should be
   video.mp4
-- Replace the contents of [README.md](README.md) with the contents of [README-template.md](README-template.md) and fill out the template.
+- Replace the contents of [README.md](README.md) with the contentsh of [README-template.md](README-template.md) and fill out the template.
 
 ## Code formatting
 The CI uses [Spotless](https://github.com/diffplug/spotless) to check if your code is formatted correctly and contains the right licenses.
