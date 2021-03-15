@@ -1,5 +1,5 @@
-# Put title of your app here
-Bloom
+# Bloom
+
 
 ![Workflow result](https://https://github.com/EddieF87/bloom/workflows/Check/badge.svg)
 
